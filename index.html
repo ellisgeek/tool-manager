@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Tool Manager</title>
+		<link rel="stylesheet" href="styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+		
+		<!--Fancybox2 specific CSS & JS-->
+		<script type="text/javascript" src="../jquery.1.7.js"></script>
+		<link rel="stylesheet" href="../fancybox2/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="../fancybox2/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+			</script>
+	</head>
+	<body>
+		<div id="container">
+			<h2>Tool Manager</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<div class="prof_box">
+                <a class="fancybox" data-fancybox-type="iframe" href="tool-add.php">
+                  <img src="database-add-icon.png" alt="" width="128" height="128" />
+                  <br>
+                  <span class="prof_title">Add Tool</span>
+								</a>
+							</div>
+						</td>
+
+						<td>
+							<div class="prof_box">
+                <a class="fancybox" data-fancybox-type="iframe" href="tool-disp.php">
+                  <img src="database-search-icon.png" alt="" width="128" height="128" />
+                  <br>
+                  <span class="prof_title">Display Tools</span>
+                  </a>
+							</div>
+						</td>
+						
+						<td>
+							<div class="prof_box">
+                <a class="fancybox" data-fancybox-type="iframe" href="tool-del.php">
+                  <img src="database-remove-icon.png" alt="" width="128" height="128" />
+                  <br>
+                  <span class="prof_title">Delete Tools</span>
+                </a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <div id="copy">
+            <p>Design by<br>Elliott Saille
+                <br>&copy;2014</p>
+        </div>
+	</body>
+</html>
